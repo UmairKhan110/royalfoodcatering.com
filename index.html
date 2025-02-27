@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Food Catering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5e1;
+            color: #7a2d2d;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #b8860b;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .menu, .gallery, .contact, .sweets, .pricing, .order {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color:black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu img, .sweets img, .pricing img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .menu-container, .sweets-container, .pricing-table {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .menu-item, .sweets-item, .pricing-item {
+            text-align: center;
+            max-width: 500px;
+        }
+        .pricing-item {
+            background-color: #f8e8c6;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .order-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .order-form input, .order-form select, .order-form button {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Royal Food Catering</h1>
+        <p>Exquisite Pakistani Wedding Food</p>
+    </header>
+
+    <div class="section menu">
+        <h2>Our Menu</h2>
+        <p>Biryani, Nihari, Seekh Kebabs, Haleem & More!</p>
+
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="image/biryani.jpg" alt="Biryani">
+                <p>Biryani</p>
+            </div>
+            <div class="menu-item">
+                <img src="image/chinese%20veg.webp" alt="Chinese Veg Food">
+                <p>Chinese Veg Food</p>
+            </div>
+            <div class="menu-item">
+                <img src="image/beef%20nihari.webp" alt="Beef Nihari">
+                <p>Beef Nihari</p>
+            </div>
+            <div class="menu-item">
+                <img src="image/seekh%20kebab.webp" alt="Seekh Kebab">
+                <p>Seekh Kebab</p>
+            </div>
+            <div class="menu-item">
+                <img src="image/beef%20haleem.webp" alt="Beef Haleem">
+                <p>Beef Haleem</p>
+            </div>
+              <div class="menu-container">
+            <div class="menu-item">
+                <img src="image/plain.webp" alt="Biryani">
+                <p>Plain Biryani</p>
+            </div>
+                  <div class="menu-container">
+            <div class="menu-item">
+                <img src="image/egg%20rice.webp" alt="Biryani">
+                <p>Garlic And Egg Rice</p>
+            </div>
+                  <div class="menu-container">
+            <div class="menu-item">
+                <img src="image/beef.webp" alt="Biryani">
+                <p>Beef Biryani</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section sweets">
+        <h2>Our Sweets</h2>
+        <p>Delicious Pakistani Desserts for your celebration!</p>
+        <div class="sweets-container">
+            <div class="sweets-item">
+                <img src="image/Ras%20malai.webp" alt="Gulab Jamun">
+                <p><strong>Ras Malai</strong></p>
+            </div>
+            <div class="sweets-item">
+                <img src="image/fruit%20custard.webp" alt="Fruit Custard">
+                <p><strong>Fruit Custard</strong></p>
+            </div>
+            <div class="sweets-item">
+                <img src="image/kheer.webp" alt="Ras Malai">
+                <p><strong>Kheer</strong></p>
+            </div>
+             <div class="sweets-item">
+                <img src="image/zarda.webp" alt="Fruit Custard">
+                <p><strong>Zarda</strong></p>
+            </div>
+             <div class="sweets-item">
+                <img src="image/gajar%20ka%20halwa.webp" alt="Fruit Custard">
+                <p><strong>Gajar ka Halwa</strong></p>
+            </div>
+             <div class="sweets-item">
+                <img src="image/ice%20cream.webp" alt="Fruit Custard">
+                <p><strong>Ice Cream</strong></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section contact">
+        <h2>Book Your Event</h2>
+        <p>Contact us for catering services for your wedding.</p>
+        <p>Phone: 03111021242 </p>
+        <p>Phone: 03324800035</p>
+        <p>WhatsApp: 0311101242</p>
+        <p>whatsapp: 03324800035</p>
+        <a href="#" class="button">Contact Us</a>
+    </div>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5e1;
+            color: #7a2d2d;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #b8860b;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .order {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .order-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .order-form input, .order-form select, .order-form button {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            background-color:black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Royal Food Catering</h1>
+        <p>Create Your Own Order</p>
+        <div class="section order">
+         <h2>Online Order Form</h2>
+          <form class="order-form">
+                <select name="dish" required>
+                <option value="">Select a Dish</option
+                <option value="Biryani">chicken Biryani</option>
+                <option value="Garlic and Egg Fried Rice">Garlic and Egg Fried Rice</option>
+                <option value="chinese rice">Chinese Veg Rice</option>
+                <option value="vagetable biryani">Vagetable Biryani</option>
+                <option value="beef biryani">Beef Biryani</option>
+                <option value="plain Rice">Plain Rice</option>
+                <option value="Nothing">Nothing</option>
+                </select>
+            <div class="section order">
+        <p>2nd item</p>
+        <form class="order-form">
+            <select name="dish" required>
+                <option value="">Select a Dish</option>
+                <option value="chicken korma">chicken korma</option>
+                <option value="Haleem">Haleem</option>
+                <option value="Nihari">Nihari</option>
+                <option value="mutton korma">Mutton korma</option>
+                <option value="chicken white korma">Chicken white korma</option>
+                <option value="beef korma">Beef korma</option>
+                <option value="degi chicken korma">Degi chicken korma</option>
+                <option value="Nothing">Nothing</option>
+            </select>
+             <div class="section order">
+        <p>fast food section</p>
+        <form class="order-form">
+            <select name="dish" required>
+                <option value="">Select a Dish</option>
+                <option value="malai boti">Malai boti</option>
+                <option value="Seekh Kebab">Seekh Kebab</option>
+                <option value="gola kebab"> Gola Kebab</option>
+                <option value="tikka kebab">Tikka Kebab</option>
+                <option value="Barbe Que">BarBQ</option>
+                <option value="Nothing">Nothing</option>
+            </select>
+             <div class="section order">
+        <p>Desert section</p>
+        <form class="order-form">
+            <select name="dish" required>
+                <option value="">Select a Dish</option>
+                <option value="Fruit Custard">Fruit Custard</option>
+                <option value="Badam Halwa">Badam Halwa</option>
+                <option value="kheer">kheer</option>
+                <option value="Ice Cream">Ice Cream</option>
+                <option value="Gajar ka Halwa">Gajar ka Halwa</option>
+                <option value="Fruit trifle">Fruit trifle</option>
+                <option value="zarda">Zarda</option>
+                <option value="Nothing">Nothing</option>
+            </select>
+            <div class="section order">
+        <p>Desert section</p>
+        <form class="order-form">
+            <select name="dish" required>
+                <option value="">Select a Dish</option>
+                <option value="Naan">Naan</option>
+                <option value="butternaan">butter naan</option>
+                <option value="Kulcha">Kulcha </option>
+                <option value="taftan">taftan</option>
+                <option value="Sheermaal">Sheermaal</option>
+            </select>
+            <input type="number" name="quantity" min="1" placeholder="Quantity" required>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" name="address" placeholder="Your Address" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+        <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    $dish = $_POST['dish'];
+    $quantity = $_POST['quantity'];
+
+    $to = "ubaidkhankhattak56@gmail.com";  // Replace with your Gmail
+    $subject = "New order for royal food catering";
+    $message = "Name: $name\nEmail: $email\nPhone: $phone\nAddress: $address\nDish: $dish\nQuantity: $quantity";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Order placed successfully!";
+    } else {
+        echo "Error sending order.";
+    }
+}
+?>
+</select>
+</select>
+</body>
+</html>
