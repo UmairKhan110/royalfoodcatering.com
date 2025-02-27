@@ -290,27 +290,22 @@
             <button type="submit">Place Order</button>
         </form>
     </div>
-        <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $dish = $_POST['dish'];
-    $quantity = $_POST['quantity'];
+const twilio = require('twilio');
 
-    $to = "ubaidkhankhattak56@gmail.com";  // Replace with your Gmail
-    $subject = "New order for royal food catering";
-    $message = "Name: $name\nEmail: $email\nPhone: $phone\nAddress: $address\nDish: $dish\nQuantity: $quantity";
-    $headers = "From: $email";
+const accountSid = 'YOUR_TWILIO_ACCOUNT_SID';
+const authToken = 'YOUR_TWILIO_AUTH_TOKEN';
+const client = new twilio(accountSid, authToken);
 
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Order placed successfully!";
-    } else {
-        echo "Error sending order.";
-    }
+function sendOrderNotification(customerName, customerPhone, orderDetails) {
+    const message = `New Order from ${customerName}\nPhone: ${customerPhone}\nOrder: ${orderDetails}`;
+    
+    client.messages.create({
+        body: message,
+        from: 'YOUR_TWILIO_PHONE_NUMBER',
+        to: '03111021242' // Your number to receive notifications
+    }).then(message => console.log('SMS sent:', message.sid))
+    .catch(error => console.error('Error sending SMS:', error));
 }
-?>
 </select>
 </select>
 </body>
